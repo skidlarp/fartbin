@@ -1,0 +1,19 @@
+:root {
+    --bg-color: #000000;
+    --accent-color: #ffffff;
+    --img-border-color: var(--accent-color);
+    --btn-border-color: rgb(20, 20, 20);
+    --btn-bg: rgb(0, 0, 0);
+    --text-color: #ebadffcf;
+    --text-color-light: #efccfacf;
+    --btn-color: var(--text-color);
+    --btn-hover: src('./files/cursor.png') 16 16, auto !important;
+    --ahref-color: var(--text-color);
+    --icon-color: var(--accent-color);
+    --icon-bg: rgba(255, 255, 255, 0.3);
+    --btn-hover-bg: rgba(98, 0, 255, 0.5);
+    --btn-border: 1px solid var(--btn-border-color);
+    --scroll-bar: var(--accent-color);
+    --selection: rgba(255, 255, 255, 0.705);
+    cursor: url(./files/cursor.png) 16 16, auto !important;
+    } 
