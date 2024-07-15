@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Smoked Alexander</title>
+
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #060606;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #888888;
+
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #cacaca; 
+  }
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: url(./files/cursor.png) 16 16, auto !important;
+        }
+@font-face {
+      font-family: 'main';
+      src: url('fonts/main.ttf');
+      }
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    background-color: #000000;
+    min-height: 97vh;
+    border-radius: 10px;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -84px;
+    border-radius: 10px;
+    color: #060606;
+}
+
+button {
+    background-color: var(--btn-bg);
+    border: var(--btn-border);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: clamp(18px, 2vw, 20px);
+    color: var(--btn-color);
+    cursor: url(./files/cursor.png) 16 16, auto !important;
+    font-family: userlol;
+    margin: 5px;
+    transition: all 0.2s ease-in-out;
+    display: inline;
+    }   
+
+.glowing-text {
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.938);
+    }   
+
+
+#blur-box1 {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    width: 95%;
+    height: 93%;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.774);
+    text-align: center;
+    animation: fadein 1s forwards;
+    }
+
+
+#video-background {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    animation: fadein 1s forwards;
+    }
+textarea {
+    background-color: #545454;
+    border: none;
+    height: 50px;
+    padding: 10px 5px;
+    color: rgb(189, 79, 79);
+    outline: none;
+    border-radius: 10px;
+}
+
+textarea .editor .mousetrap {
+    padding-right: 300px;
+}
+
+
+
+@keyframes fadeout {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+@keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+.next {
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    position: absolute;
+    font-weight: normal;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="button"><b class="next glowing-text">Click For Tearing apart</b></div>
+    <div id="blur-box1">
+    <div class="wrapper">
+<a href="" class="href"></a>
+            <div class="show-container" style="margin-top:10px;padding-left: 10px;">
+<p style="line-height:0.9em;font-size: 13px;color: white; margin: 0;word-break: break-word;white-space: pre-wrap;font-family: monospace, serif;font-size: 1em;">    
+                        @@@@@@@@@ @@@@@@@#                                   
+                        @@@@@@@*=-:::=@@@+-:::=%%%@%                               
+                       #=--*@=.......=:...:..-#+--=@@%                            
+                     %@@@#-::-*===*@@@@@@@@@%====:..:*#@@@%                         
+                     #@#+===-+*=----:....-:....-+##**:-++===#@@                       
+                     %@+:.=+-+***+==+####++++=+***+++**+-...-+%%                      
+                     @@@=-+*+--*@*++++++++++++*@#-:::%#-:.::%@@%                      
+                     #@@##==%@@#++++++++++++++++#@@@@:-**%#-%@@@@##                   
+                     %@+=@@@@*+++++++++==++++++*#++++*@#:..=@=:.:.#@@                  
+                     --*@@%#*+++-.:++++:.=+++-.-+++++++*@+.:-%%:..#@@                  
+                     ###%##++++*-.-++++++++++-.-+++-:-=+###+:=+#+-%@@@#                
+                     %@%%++::##**++++++++*#*+++++*#*+-.-+*@*:--=*%@@%%*                
+                     %@%##*==@##**++**+++*#*++##*##*++==+**+-*##%@@@%#*                
+                     @@%#%%##@####**#****%@*+*#####*+*+++++%@:..=@@@%#*                
+                     @@%#%%##@%%###########%%%%#+*#*+*++++*+----+@@@@@@@@%             
+                     @@%#%%##===+##########+=====+%#+*+++*#%@@@@%=:......+@@@%         
+                     @@%#%%#*----=**#####=-:::---+@#+++++*###@%=+@+-#%:...:*@@         
+                      %@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@@@%:-@=.=+@@@@@@           
+                     @@@@*:%+:%@@@@@%=*@#:%#.*@@@@@@@@*+++++##+-.-@=..:%%@@@            
+                     ##%@@:*@:+@@@@#...+@==@=:@@@@@*+++++++*#=:.-@@@:.%%               
+                     @@*+@@@@@@@@@-......%@@@@@@@#-=+++++++*#=:.-@@@:.%%               
+                     @@*+####-....................:+#+++++##*-..-@@@*++                
+                     @@%#####-....................:+#+++++##*@@@@@%%@@#                
+                     @@%#+*##=:.....:----.........:+#+++++##*@@%%%%%##@%               
+                     @@%#+*##===:................:-+#+++++##*@@%%%%%##@@               
+                     @@@@++*%@@@*=:............:=*@%#++*##*##@@%%%%%*+@%               
+                     @@##**@@%@@@@:::::::-+++==*@%#++*#*+*#@@%#+#%*++*%#             
+                     %%**@@%@@@@@@@@@%+++====*@%#++*%#+*#@@@%+++++++@%             
+                     @@@@@@@@****#@@@@@@@@%#===----=**#++*%##%%@@@%*++@@*+++             
+                     %*-:..-@@@@***%@@@@@@#--===----=+*#++*@%#%@%%@@%*+%@%#*#@@           
+                     %*-:...-=##%%%*=*###-=#*-::...::-+#++*@@@@%%%%%**+-:--%#**           
+                     %*-:...::-=%@@%#%%=--=%#-:......-+++*%%%##****=. ..:%@+**%@@         
+                     @@@@=.....:--*@@%*---@%=+@+  ...=@*+*@%+-..........%@@%+#%% @@        
+                     #@@@@@+-------%++*:::#@@@%@@@%:.:@%++#@--.....#@@@@@@@@*++#%% @@        
+                     %%%@@@@@@@****@%:=*%*:+%@=-.@@#+=+#@%*%%=:..:---%@@@@@@@@%#+#%% @@        
+                     %%@@@@@@@-:....:**.-++*+@%+=-.@%+=%@*@%+-.........#@@@@@@@@@@%%%% %%        
+                     @@@@@@@@@@-....:-****=:-@@*....@%*-::=*+..-------%@@@@@@@%%%@@@@%%           
+                    #@@@@@@@@@@@@@@*..::::+@@@@%##**@@%..:@-.:-==@@@@@@@@@@@@@%%%@@@@%%           
+                    #@@@@@@@@@@@@@*:.       ........:######-....:@@@@@@@@@@@%%%%%@@@%##           
+                    #@@@@@@@@@@@#=...      .*%@#+...  ......-@@@@@@@@@@@@%%%%%%%%@@@@@%           
+                    #%@@@@@@@%#-...........-----      .::..+@@@@@@@@@@%%%%%%%%%%%%@@@%           
+                    @@@@@@@@*-::-:...... ......      ...-*@@@@@@@@%%%%%@@@%@@%%%%@@@%           
+                    @@@@@@@@*----:::::::::::.........-..#@@@@@@%%%%%@@@@@@%%%%%%%@@@%           
+                    #@@@@@@@@@#***------------::::::::----#@@@@@@@@%@@@@@%%%%@@@@%%@@@%           
+                    @@@@@@@@@@@@@@@@@**--------------------#@@@@@@@@@@@@@@@@@@@@@@@@@@@%           
+                    @@@@@@@@@@...:-:..-----*+--------------%@*=====*@@@@@@@@@@@@@@@@@@@@             
+                    @@@@@@+=--.:=:.....=@@@@@@@@+--------=+:.......-=#@@@@@@@@@@@@@@@@               
+                    @@@@@@*+==-=+-....-@@@@@@@@@@@@@@@@#+============#@@@@@@@@@@@@@@#                
+                    #@@@@@@@@@@@@@@%++*+-#@@@@@%@@@@@@@@@@@#-:......:-=%@@@@@@@@@@@@#                    
+                    @@@@@@@@@@@@@@@%+=---#@@@@@%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                        
+
+╔════════════════════════════════════════════════════════════════════════╗
+║                                1x1 Reason                              ║
+╚════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════╗
+║ 1: poopslapsonpc                                                       ║
+║ 2: Leaking a minors nudes in 2022/2023                                 ║
+║ 3: Still being on the internet to this day                             ║
+╚════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════╗
+║                          1x2 Personal Information                      ║
+╚════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════╗
+║ Name: Alexander Hamblin                                                ║
+║ Race: White Cracker                                                    ║
+║ Gender: male                                                           ║
+║ Sexuality: straight or bi idk                                          ║
+║ Relationship Status: single lol                                        ║
+║ D.O.B: idk                                                             ║
+║ Age: 16                                                                ║
+║ Mobile Phone Number:  318-518-4218                                     ║
+║════════════════════════════════════════════════════════════════════════║
+                                   ║ Direct Address......  2410 Ashdown Drive, Bossier City, LA             ║                                   
+ ║ SCHOOL.............. Home schooled LOL                                 ║ 
+╚════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════╗
+║                          1x3 Social Media Accounts (Updated)           ║
+╚════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════╗
+║ Online Alias: actavis, John Gotti, 2bap, KItKatt, -Duck, КитКат        ║
+║ Discord: 2bap                                                          ║
+╚════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════╗
+║                                 1x4 Pics                               ║
+╚════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════╗
+║ 1: <a href="https://img.swatting.pro/bgGXAonNZhxu.png" class="href">this nigga in a car</a>                                                 ║
+║ 2: <a href="https://img.swatting.pro/JmLOWUKtwwKt.jpg" class="href">this nigga a freak!</a>                                                 ║
+║ 3: <a href="https://img.swatting.pro/AXUXsAFObtTS.jpg" class="href">this nigga look dead</a>                                                ║
+║ 4: <a href="https://img.swatting.pro/content/cdn/EWUGdccJSiXl.webp" class="href">this nigga zesty af</a>                                                 ║
+║ 5: <a href="https://img.swatting.pro/VCwtKRZWGgZo.jpg" class="href">this nigga gotta be dead</a>                                            ║
+║ 6: <a href="https://img.swatting.pro/wnnJlAkdMcAG.jpg" class="href">someone arrest this nigga</a>                                           ║
+║ 7: <a href="https://img.swatting.pro/KQANuurlOWkb.jpg" class="href">put this nigga behind bars</a>                                          ║
+║ 8: <a href="https://img.swatting.pro/PgJKVuEKjUpc.jpg" class="href">this nigga cant rizz shit</a>                                           ║
+╚════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════╗
+ ║                               1x5 Message                              ║ 
+║ You were warned that if you ever were spotted on the internet again    ║
+║ something bad would happen, you were swatted, doxxed, leaked, and still║
+║ did not listen. Welcome to hell Alexander, and enjoy your stay.        ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+╔════════════════════════════════════════════════════════════════════════╗
+ ║                               1x6 Credits                              ║ 
+║ 1. $cars Back in 22 he wrote this all up when he was 12. I tweaked it  ║
+║ 2. Drips Supplied all the images and also rewrote the dox!             ║
+╚════════════════════════════════════════════════════════════════════════╝
+              </p>            </div>
+        </div>
+    </div>
+
+      <video id="video-background" loop>
+        <source src="files/Pedocide By Drips, KKunx.ogg" type="audio/ogg"> 
+    </video>
+    <script>
+      document.getElementById("button").addEventListener("click", function () {
+          var button = this;
+          button.style.animation = "fadeout 1s forwards";
+
+          var bgAudio = document.getElementById("video-background"); 
+          document.getElementById("blur-box1").style.display = "block";
+          bgAudio.play();
+      });
+</script>
+
+<script>
+    var titles = ["G", "Ge", "Get", "Get S", "Get Sm", "Get Smo", "Get Smok", "Get Smoke", "Get Smoked", "Get Smoked A", "Get Smoked Al", "Get Smoked Ale", "Get Smoked Alex", "smokin ur deads"];
+    var currentTitleIndex = 0;
+    function changeTitle() {
+        document.title = titles[currentTitleIndex];
+        currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+    }
+    setInterval(changeTitle, 300);
+</script>
+</body>
+</html>
